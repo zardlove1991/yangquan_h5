@@ -72,7 +72,7 @@
 
 <script setup>
 import { ImagePreview, Toast } from "vant";
-import { defineProps, reactive, onMounted, ref } from "vue";
+import { reactive, onMounted, ref } from "vue";
  import SearchBar from 'comps/SearchBar.vue'
 import  * as API  from '../api';
   const { getDetail } = API.default

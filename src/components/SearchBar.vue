@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import { defineProps, ref } from "vue";
+import { ref } from "vue";
 const props = defineProps({
   title: String,
 });
@@ -34,7 +34,7 @@ const isCilent = ref(SmartCity.isSmartCityApp())
 const goBack = () => {
   isCilent.value ? SmartCity.goBack() : history.go(-1)
 }
-const emit = defineEmit(['search'])
+const emit = defineEmits(['search'])
 const search = () => {
   emit('search', title)
 }

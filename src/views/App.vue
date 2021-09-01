@@ -75,7 +75,7 @@
 
 <script setup>
   import { Toast } from 'vant';
-  import { defineProps, reactive, onMounted,ref } from 'vue'
+  import { reactive, onMounted,ref } from 'vue'
   import SearchBar from 'comps/SearchBar.vue'
   import  * as API  from '../api';
   const { getSwipeList, getMiddleList, getBottomList, getType } = API.default
