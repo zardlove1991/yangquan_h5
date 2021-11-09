@@ -5,7 +5,8 @@
     "build": "vite build",
     "house": "vite build --mode house",
     "car": "vite build --mode car",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test-e2e": "cypress open"
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",
@@ -14,8 +15,11 @@
     "vue": "^3.0.5"
   },
   "devDependencies": {
+    "@cypress/vite-dev-server": "^2.0.8",
+    "@cypress/vue": "^3.0.3",
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
+    "cypress": "^8.3.1",
     "postcss-pxtorem": "^6.0.0",
     "sass": "^1.35.1",
     "vconsole": "^3.8.1",
